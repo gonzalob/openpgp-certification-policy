@@ -1,117 +1,231 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <base href="http://www.gonz0.com.ar/gpg/certPolicy.html" />
-        <link href="/styles/default.css" rel="stylesheet" type="text/css"/>
+        <base href="http://www.gonz0.com.ar/gpg/certification-policy-2_0.html" />
         <meta http-equiv="author" content="Gonzalo Bermudez"/>
+        <style type="text/css">
+            body {
+                display: block;
+                font-family: verdana, sans-serif;
+                text-align: justify;
+            }
+            
+            h1 {
+                font-size: large;
+                border-bottom: 1px solid #3300CC;
+            }
+            
+            h2 {
+                font-size: medium;
+                border-bottom: 1px solid #3300CC;
+            }
+            
+            p {
+                font-size: small;
+                padding-left: 2%;
+            }
+            
+            h1, h2, p {
+                margin-right: 2%;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            img {
+                border: none;
+            }
+            
+            dl {
+                font-size: small;
+            }
+            
+            dt {
+                font-weight: bold;
+                float: left;
+                width: 25%;
+                text-align: right;
+            }
+            
+            dd {
+                margin-left: 26%;
+                margin-right: 16%;
+            }
+            
+            .openpgpkey {
+                background-color: black;
+                border: 4px solid green;
+                color: white;
+                font-weight: bold;
+                margin-left: 3%;
+                margin-right: 3%;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+            
+            #footer {
+                border-top: 4px solid #3300CC;
+                padding-bottom: 3%;
+                padding-top: 3%;
+                text-align: center;
+            }
+        </style>
         <title>
             Certificate Signing Policy for Gonzalo Berm&uacute;dez
         </title>
     </head>
     <body>
         <h1>Certificate Signing Policy for Gonzalo Berm&uacute;dez</h1>
-        <p>v1.2 - August 4, 2007</p>
+        <p>v2.0 - June 1, 2008</p>
         <h2>Content</h2>
         <ol>
             <li><a href="#keys">Key(s) affected by this policy</a></li>
-            <li><a href="#location">Where am I</a></li>
+            <li><a href="#location">Location</a></li>
             <li><a href="#levels">Signature levels</a></li>
             <li><a href="#proof">Proof of identity</a></li>
             <li><a href="#changelog">Changelog</a></li>
             <li><a href="#license">License</a></li>
         </ol>
         <h2><a id="keys"></a>Key(s) affected by this policy</h2>
-        <p>This policy is valid for all signatures made by the following 
-           GnuPG key:</p>
+        <p>
+            This policy is valid for all signatures made by the following 
+            GnuPG key:
+        </p>
         <pre class="openpgpkey">
-pub   4096R/E2FC4825 2006-07-24
+pub   4096R/E2FC4825 2006-07-24 [expires: 2081-01-01]
       Key fingerprint = 607D 555B 2B11 B1B3 916A  CBDE 31E5 FE63 E2FC 4825
 uid                  Gonzalo Berm&uacute;dez &lt;&gt;
 uid                  [jpeg image of size 1346]
-sub   1024D/C6348680 2006-07-24
+sub   1024D/C6348680 2006-07-24 [expires: 2081-01-01]
 sub   2048g/BDDC0C50 2006-07-24 [expires: 2008-07-23]
+sub   2048g/B705529D 2008-06-01 [expires: 2010-06-01]
         </pre>
-        <p>This key is not published on keyservers. The current version 
-can be found <a href="public_key.asc">here</a>. The email address on this 
-web page has been removed to prevent spamming. On the actual key, the address 
-is present.</p>
-        <h2><a id="location"></a>Where am I</h2>
-        <p>I live on Argentina's Federal District. Here, I'm available for key 
-signing at any time. Also, I'll be publishing any travels I do or events I 
-attend to on <a href="http://www.google.com/calendar/embed?src=
-7nvjfntgorknh2d1kus2iq1nmg%40group.calendar.google.com">my Key Signing 
-Coordination Google Calendar</a>.</p>
+        <p>
+            This key is not published on keyservers. The current version can be 
+            found <a href="http://www.gonz0.com.ar/gpg/public-key.asc">here</a>.
+            The email address on this web page has been removed to prevent 
+            spamming. On the actual key, the address is present.
+        </p>
+        <h2><a id="location"></a>Location</h2>
+        <p>
+            I live on Argentina's Federal District. Here, I'm available for key 
+            signing at any time. I'm also listed on 
+            <a href="http://biglumber.com/x/web?sn=Gonzalo+Berm%C3%BAdez">
+            biglumber</a>, a site about key signing coordination.
+        </p>
         <h2><a id="levels"></a>Signature levels</h2>
-        <p>The level I'll use to sign each UID depends on how well I can 
-assure someone is who he or she claims to be.</p>
+        <p>
+            The level I'll use to sign each UID depends on how confidently can 
+            I state that someone is who he or she claims to be.
+        </p>
         <dl>
             <dt>Level 3</dt>
-            <dd>This level will only be given to people I know long enough to 
-be absolutely sure of their identity. Mostly friends, family and long term 
-co-workers will receive this level of signature.</dd>
+            <dd>
+                This level will only be given to people I know long enough to 
+                be absolutely sure of their identity. Mostly friends, family 
+                and long term co-workers will receive this level of signature.
+            </dd>
             <dt>Level 2</dt>
-            <dd>This signature level is assigned to those UIDs of people who 
-contacted me for key signing, succeeded in providing <a href="#proof">
-reasonable proof of identity</a> although I do not know them, and have the 
-owner's real name on them.</dd>
-            <dt>Level 1</dt>
-            <dd>Signatures of level 1 are given to those UIDs from people who 
-<a href="#proof">prove their identity</a>, are not known to me, and have a 
-pseudonym, company name or anything else than a real name on them. Note that I 
-require at least one UID with the real name on the key to sign it.</dd>
-            <dt>Level 0</dt>
-            <dd>I won't use signatures of level 0.</dd>
+            <dd>
+                This signature level is assigned to those people who contacted 
+                me for key signing and succeeded in providing <a href="#proof">
+                reasonable proof of identity</a> although I do not know them.
+            </dd>
+            <dt>Levels 1 and 0</dt>
+            <dd>I won't be using these levels for the time being.</dd>
         </dl>
         <h2><a id="proof"></a>Proof of identity</h2>
-        <p>To prove an identity, I request a meeting in person, to which the 
-<i>signee</i> (the person willing to get their key signed) must attend with a 
-passport, identity card, driver's license or the like, featuring a photo id; he 
-or she must also provide a piece of paper with their key's fingerprint on, and 
-a list of all UIDs I'm requested to sign. I will accept handwritten 
-information, although I won't sign an UID if I cannot understand it, nor will 
-I sign any UID if the fingerprint is not clear enough.</p>
-        <p>During the meeting, I'll compare the picture on the identity card 
-with the person's face, and take note of the name on it. I'll also keep the 
-piece of paper with the keys' information to validate the key which I should 
-sign.</p>
-        <p>Of course, I need access to the public key I'm signing. If it's not 
-available on keyservers, I expect to receive it somehow: be it an URL from 
-where to grab it, or email, or whatever. From the time I receive the key on, 
-I'll be sending every email encrypted if the key has an encryption subkey.</p>
-        <p>Once the meeting is over, and I'm back at home, I'll send random 
-pieces of data to the email addresses listed on the UIDs I'm requested to 
-sign. I expect to receive them back, signed by the key I'm signing.</p>
-        <p>For each UID for which the email challenge/response is successfully 
-completed, I'll be sending an email with it signed by my key, according to my 
-<a href="#levels">signature levels policy</a>.</p>
+        <p>
+            To prove an identity, I request a meeting in person, to which the 
+            <acronym title="the person willing to get their key signed">
+            signee</acronym> must attend with an identity card featuring a 
+            photo id; he or she must also provide a piece of paper with their 
+            key's fingerprint on, and a list of all UIDs I'm requested to sign. 
+            I will accept handwritten information, although I won't sign a UID 
+            if I cannot understand it, nor will I sign any UID if the 
+            fingerprint is not clear enough.
+        </p>
+        <p>
+            During the meeting, I'll compare the picture on the identity card 
+            with the person's face, and take note of the name on it. I'll also 
+            keep the piece of paper with the keys' information to validate the 
+            keys I should sign.
+        </p>
+        <p>
+            These proceedings are not required for people I know long enough 
+            to discard identity forgery. In those cases, I'll requiere only 
+            that they hand me their fingerprints in person, to avoid man in the 
+            middle attacks.
+        </p>
+        <p>
+            Of course, I need access to the public key I'm signing. If it's not 
+            available on keyservers, I expect to receive it somehow: be it an 
+            URL from where to grab it, or email, or any other means. From the 
+            time I receive the key on, I'll be sending every email encrypted if 
+            the key has an encryption subkey.
+        </p>
+        <p>
+            Once the meeting is over, and I'm back at my place, I'll send 
+            random pieces of data to the email addresses listed on the UIDs I'm 
+            requested to sign. I expect to receive them back, signed by the key 
+            I'm signing.
+        </p>
+        <p>
+            Once the email challenge/response is successfully completed, I'll 
+            be sending an email with each signed UID signed by my key, 
+            according to my <a href="#levels">signature levels policy</a>.
+        </p>
         <h2><a id="changelog"></a>Changelog</h2>
         <dl>
-            <dt>Verion 1.2, 2007-07-04</dt>
-            <dd>Fixed XHTML issues, and minor language mistakes.</dd>
+            <dt>Version 2.0, 2008-06-01</dt>
+            <dd>
+                Big changes. Level 1 signatures are gone (I issued none 
+                anyways); the signing process for people I know long enough is 
+                now stated out loud; and the challenge/response part now 
+                explains that if one UID fails, the whole key fails.
+            </dd>
+            <dt>Version 1.2, 2007-07-04</dt>
+            <dd>
+                Fixed XHTML issues, and minor language mistakes. This version 
+                can be found <a 
+                    href="http://www.gonz0.com.ar/gpg/certification-policy-1_2.html">
+                here</a>.
+            </dd>
             <dt>Version 1.1, 2006-08-30</dt>
             <dd>Corrected some typos.</dd>
             <dt>Version 1.0, 2006-08-23</dt>
             <dd>Initial release.</dd>
         </dl>
-        <p>This policy can and should be checked against <a 
-href="certPolicy.html.asc">its detached signature</a>.</p>
+        <p>
+            This policy can and should be checked against <a 
+                href="http://www.gonz0.com.ar/gpg/signatures/certification-policy-2_0.html.asc">
+            its detached signature</a>.
+        </p>
         <h2><a id="license"></a>License</h2>
-        <p>Copyright (c) 2006 Gonzalo Berm&uacute;dez</p>
-        <p>Permission is granted to copy, distribute and/or modify this 
-document under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">
-GNU Free Documentation License</a>, Version 1.2.</p>
-        <p>Some ideas for this document were taken from the <a 
-href="http://www.sc-delphin-eschweiler.de/pgp/">GnuPG Key Signing Policy of 
-Marcus Frings</a>.</p>
+        <p>Copyright (c) 2006-2008 Gonzalo Berm&uacute;dez</p>
+        <p>
+            Permission is granted to copy, distribute and/or modify this 
+            document under the terms of the 
+            <a href="http://www.gnu.org/licenses/fdl.html">
+            GNU Free Documentation License</a>, Version 1.2.
+        </p>
+        <p>
+            Some ideas for this document were taken from the 
+            <a href="http://www.sc-delphin-eschweiler.de/pgp/">
+            GnuPG Key Signing Policy of Marcus Frings</a>.
+        </p>
         <div id="footer">
             <a href="http://validator.w3.org/check?uri=referer">
                 <img src="http://www.w3.org/Icons/valid-xhtml10"
-                     alt="Valid XHTML 1.0 Strict" /></a>
-            <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.gonz0.com.ar/gpg/certPolicy.html">
-                 <img src="http://jigsaw.w3.org/css-validator/images/vcss" 
-                      alt="Valid CSS!" /></a>
+                     alt="Valid XHTML 1.0 Strict" />
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.gonz0.com.ar/gpg/certification-policy-2_0.html">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" 
+                     alt="Valid CSS!" />
+            </a>
         </div>
     </body>
 </html>
