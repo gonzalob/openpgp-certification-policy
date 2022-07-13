@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <base href="http://www.gonz0.com.ar/gpg/certification-policy-2_0.html" />
+        <base href="http://www.gonz0.com.ar/gpg/certification-policy-2_1.html" />
         <meta http-equiv="author" content="Gonzalo Bermudez"/>
         <style type="text/css">
             body {
@@ -79,7 +79,7 @@
     </head>
     <body>
         <h1>Certificate Signing Policy for Gonzalo Berm&uacute;dez</h1>
-        <p>v2.0 - June 1, 2008</p>
+        <p>v2.1 - July 11, 2009</p>
         <h2>Content</h2>
         <ol>
             <li><a href="#keys">Key(s) affected by this policy</a></li>
@@ -99,9 +99,8 @@ pub   4096R/E2FC4825 2006-07-24 [expires: 2081-01-01]
       Key fingerprint = 607D 555B 2B11 B1B3 916A  CBDE 31E5 FE63 E2FC 4825
 uid                  Gonzalo Berm&uacute;dez &lt;&gt;
 uid                  [jpeg image of size 1346]
-sub   1024D/C6348680 2006-07-24 [expires: 2081-01-01]
-sub   2048g/BDDC0C50 2006-07-24 [expires: 2008-07-23]
 sub   2048g/B705529D 2008-06-01 [expires: 2010-06-01]
+sub   2048R/0A267238 2009-07-11 [expires: 2019-06-01]
         </pre>
         <p>
             This key is not published on keyservers. The current version can be 
@@ -180,19 +179,33 @@ sub   2048g/B705529D 2008-06-01 [expires: 2010-06-01]
         </p>
         <h2><a id="changelog"></a>Changelog</h2>
         <dl>
-            <dt>Version 2.0, 2008-06-01</dt>
+            <dt>
+                Version 2.1, 2009-07-11 [ <a
+                    href="http://www.gonz0.com.ar/gpg/certification-policy-2_1.html">
+                link</a> ]
+            </dt>
+            <dd>
+                Revoked the signing subkey, which was superseded by 0x0A267238.
+                This document will be signed by the primary key, to validate the switch.
+            </dd>
+            <dt>
+                Version 2.0, 2008-06-01 [ <a
+                    href="http://www.gonz0.com.ar/gpg/certification-policy-2_0.html">
+                link</a> ]
+            </dt>
             <dd>
                 Big changes. Level 1 signatures are gone (I issued none 
                 anyways); the signing process for people I know long enough is 
                 now stated out loud; and the challenge/response part now 
                 explains that if one UID fails, the whole key fails.
             </dd>
-            <dt>Version 1.2, 2007-07-04</dt>
-            <dd>
-                Fixed XHTML issues, and minor language mistakes. This version 
-                can be found <a 
+            <dt>
+                Version 1.2, 2007-07-04 [ <a 
                     href="http://www.gonz0.com.ar/gpg/certification-policy-1_2.html">
-                here</a>.
+                link</a> ]
+            </dt>
+            <dd>
+                Fixed XHTML issues, and minor language mistakes.
             </dd>
             <dt>Version 1.1, 2006-08-30</dt>
             <dd>Corrected some typos.</dd>
@@ -201,11 +214,11 @@ sub   2048g/B705529D 2008-06-01 [expires: 2010-06-01]
         </dl>
         <p>
             This policy can and should be checked against <a 
-                href="http://www.gonz0.com.ar/gpg/signatures/certification-policy-2_0.html.asc">
+                href="http://www.gonz0.com.ar/gpg/signatures/certification-policy-2_1.html.asc">
             its detached signature</a>.
         </p>
         <h2><a id="license"></a>License</h2>
-        <p>Copyright (c) 2006-2008 Gonzalo Berm&uacute;dez</p>
+        <p>Copyright (c) 2006-2009 Gonzalo Berm&uacute;dez</p>
         <p>
             Permission is granted to copy, distribute and/or modify this 
             document under the terms of the 
